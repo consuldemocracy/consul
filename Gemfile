@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "7.0.8.1"
+gem "rails", "7.1.3.2"
 
 gem "acts-as-taggable-on", "~> 10.0.0"
 gem "acts_as_votable", "~> 0.14.0"
@@ -23,7 +23,7 @@ gem "devise-security", "~> 0.18.0"
 gem "exiftool_vendored", "~> 12.80.0"
 gem "file_validators", "~> 3.0.0"
 gem "font-awesome-sass", "~> 5.15.1" # Remember to update vendor/assets/images/fontawesome when updating this gem
-gem "foundation_rails_helper", "~> 4.0.1"
+gem "foundation_rails_helper", github: "frenkel/foundation_rails_helper", branch: "rails-7-1"
 gem "globalize", "~> 6.3.0"
 gem "globalize-accessors", "~> 0.3.0"
 gem "graphiql-rails", "~> 1.8.0"
@@ -46,7 +46,8 @@ gem "recipient_interceptor", "~> 0.3.1"
 gem "redcarpet", "~> 3.6.0"
 gem "responders", "~> 3.1.1"
 gem "rinku", "~> 2.0.6", require: "rails_rinku"
-gem "ros-apartment", "~> 2.11.0", require: "apartment" # Remove ConnectionHandling monkey patch when upgrading
+gem "ros-apartment", github: "rails-on-services/apartment", branch: "development", require: "apartment"
+# ActiveSupport::MessagePack requires the msgpack gem, version 1.7.0 or later. Please add it to your Gemfile: `gem "msgpack", ">= 1.7.0"
 gem "sassc-embedded", "~> 1.70.1"
 gem "sassc-rails", "~> 2.1.2"
 gem "savon", "~> 2.15.0"
