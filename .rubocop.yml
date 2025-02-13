@@ -818,6 +818,9 @@ Style/RedundantStringEscape:
 Style/SafeNavigation:
   Enabled: true
 
+Style/SafeNavigationChainLength:
+  Enabled: true
+
 Style/SingleLineDoEndBlock:
   Enabled: true
 
